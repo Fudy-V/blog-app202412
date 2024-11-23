@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${mincho.className} ${notoSerif.className} bg-secondary text-primary`}>
+      <body className={`${mincho.className} ${notoSerif.className} bg-[#efefef] text-[#37474F]`}>
         <Header></Header>
         {children}
       </body>
