@@ -35,7 +35,7 @@ const page = () => {
           return (
             <li key={post.id} className="block w-[80%] my-10 mx-2 bg-[#E3F2FD]">
               <div className=" flex flex-row w-[80%] justify-between">
-                <h3 className=" inline-block text-xl font-bold">Title:{post.title}</h3>
+                <h3 className=" inline-block text-xl">Title:{post.title}</h3>
                 <span className="inline-block text-sm">{post.createdAt}</span>
               </div>
               <p className="py-5">{post.content}</p>

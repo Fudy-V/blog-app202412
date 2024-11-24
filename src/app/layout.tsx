@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
-import { Shippori_Mincho, Noto_Serif_JP } from "next/font/google";
 import "@/style/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer/Footer";
-
-const mincho = Shippori_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
-
-const notoSerif = Noto_Serif_JP({
-  subsets: ["latin"],
-  weight: ["200", "400", "700", "900"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "はじまりのBlog",
@@ -28,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${mincho.className} ${notoSerif.className} bg-[#efefef] text-[#37474F]`}>
+      <body className={` shippori-mincho-regular shippori-mincho-bold bg-[#efefef] text-[#37474F]`}>
         <Header></Header>
         {children}
         <Footer></Footer>
