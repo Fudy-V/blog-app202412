@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Shippori_Mincho, Noto_Serif_JP } from "next/font/google";
 import "@/style/globals.css";
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer/Footer";
 
 const mincho = Shippori_Mincho({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${mincho.className} ${notoSerif.className} bg-[#efefef] text-[#37474F]`}>
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

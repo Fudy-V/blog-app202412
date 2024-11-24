@@ -5,7 +5,7 @@ import { Dropdown } from "@/components/ui/Buttton/Dropdown";
 
 const Header = () => {
   return (
-    <div className=" fixed z-10 mt-1 mb-3 px-5 flex flex-row justify-between items-center ">
+    <div className=" fixed w-[100vw] top-0 z-10 mb-3 px-5 flex flex-row justify-between items-center bg-[#efefefcb]">
       <Link href="/">
         <Image src="/fud_favicon.png" alt="ロゴアイコン" width={100} height={100}></Image>
       </Link>

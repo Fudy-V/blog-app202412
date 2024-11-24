@@ -28,13 +28,14 @@ export function Dropdown(props: DropdownProp) {
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
           <Link href={props.url}>
-            <DropdownMenuRadioItem value="top">ダッシュボード</DropdownMenuRadioItem>
+            <DropdownMenuRadioItem value="dashboard">ダッシュボード</DropdownMenuRadioItem>
           </Link>
-          <DropdownMenuRadioItem className="flex flex-row" value="top">
+          <DropdownMenuRadioItem className="flex flex-row" value="setting">
             <Link href={props.url}>設定</Link>
           </DropdownMenuRadioItem>
-          {/* <DropdownMenuRadioItem value="bottom">Bottom</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="right">Right</DropdownMenuRadioItem> */}
+          <DropdownMenuRadioItem className="flex flex-row" value="logout">
+            <Link href={props.url}>ログアウト</Link>
+          </DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
